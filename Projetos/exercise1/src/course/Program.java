@@ -17,7 +17,30 @@ public class Program {
 		
 		System.out.printf("Products:%n%s, which price is $ %.2f%n%s, which price is $ %.2f%n%nRecord: %d years old, code %d and gender: %c%n%nMeasue with eight decimal place: %.8f%nRounded (three decimal places): %.3f%n", product1, price1, product2, price2, age, code, gender, measure, measure);
 		Locale.setDefault(Locale.US);
-		System.out.printf("US decimal point: %.3f", measure);
+		System.out.printf("US decimal point: %.3f%n", measure);
+		
+		System.out.printf("%nResposta%n%n");
+		
+		System.out.println("Products:");
+		System.out.printf("%s, which price is $ %.2f%n", product1, price1);
+		System.out.printf("%s, which price is $ %.2f%n", product2, price2);
+		System.out.println();
+		System.out.printf("Record: %d years old, code %d and gender: %c%n", age, code, gender);
+		System.out.println();
+		System.out.printf("Measue with eight decimal places: %.8f%n", measure);
+		System.out.printf("Rouded (three decimal places): %.3f%n",measure);
+		Locale.setDefault(Locale.US);
+		System.out.printf("US decimal point: %.3f%n", measure);
+		
+		System.out.printf("%nTeste de Tabulação%n%n");
+		
+		double numeroExpressivo = 1;
+		
+		for (int i = 0; i < 10; i++) {
+			System.out.printf("%f\t Lucas%n", numeroExpressivo);
+			
+			numeroExpressivo *= 10;
+		}
 	}
 
 }
